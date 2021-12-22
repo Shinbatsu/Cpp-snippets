@@ -1,0 +1,1048 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+
+<!--1)//////////////////////////////////#INCLUDE///////////////////////////////////////-->
+	<!-- 1.IOStream -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>IOStream</Title>
+			<Shortcut>#ios</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <iostream>$end$]]>	
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- IOStream -->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 2.String -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>String</Title>
+			<Shortcut>#str</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <string>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- String -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 3.Vector -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Vector</Title>
+			<Shortcut>#vec</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <vector>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Vector -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 4.Numeric -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Numeric</Title>
+			<Shortcut>#num</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <numeric>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Numeric -->
+		<!-- 1.Accumulate -->
+		<CodeSnippet Format="1.0.0">
+			<Header>
+				<Title>Accumulate</Title>
+				<Shortcut>nacc</Shortcut>
+			</Header>
+			<Snippet>
+				<Declarations>
+					<Literal>
+						<ID>name</ID>
+						<Default>arr</Default>
+					</Literal>
+				</Declarations>
+				<Code Language="cpp">
+					<![CDATA[accumulate($name$.begin(), $name$.end(), string());]]>
+				</Code>
+			</Snippet>
+		</CodeSnippet>
+		<!-- Accumulate -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 5.Algorithm -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Algorithm</Title>
+			<Shortcut>#alg</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <algorithm>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Algorithm -->
+		<!-- 1.Generate -->
+		<CodeSnippet Format="1.0.0">
+			<Header>
+				<Title>Generate</Title>
+				<Shortcut>agen</Shortcut>
+			</Header>
+			<Snippet>
+				<Declarations>
+					<Literal>
+						<ID>name</ID>
+						<Default>arr</Default>
+					</Literal>
+				</Declarations>
+				<Code Language="cpp">
+					<![CDATA[generate($name$.begin(), $name$.end(), []() -> int {return 0};]]>
+				</Code>
+			</Snippet>
+		</CodeSnippet>
+		<!-- Generate -->
+	<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 6.Regex -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Regex</Title>
+			<Shortcut>#reg</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <regex>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Regex -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 7.Thread -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Thread</Title>
+			<Shortcut>#thr</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <thread>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Thread -->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 8.Chrono -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Chrono</Title>
+			<Shortcut>#chr</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <chrono>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Chrono -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 9.Complex -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Complex</Title>
+			<Shortcut>#comp</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <complex>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Complex -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 10.Exception -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Exception</Title>
+			<Shortcut>#exc</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <exception>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Exception -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 11.Deque -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Deque</Title>
+			<Shortcut>#deq</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <deque>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Deque -->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 12.List -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>List</Title>
+			<Shortcut>#list</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <list>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- List -->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 13.Queue -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Queue</Title>
+			<Shortcut>#que</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <queue>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Queue -->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 14.Stack -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Stack</Title>
+			<Shortcut>#stc</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <stack>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Stack -->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 15.Iterator -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Iterator</Title>
+			<Shortcut>#iter</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <iterator>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Iterator -->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 16.Locale -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Locale</Title>
+			<Shortcut>#loc</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <locale>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Locale -->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 17.Memory -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Memory</Title>
+			<Shortcut>#mem</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <memory>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Memory -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 18.Valarray -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Valarray</Title>
+			<Shortcut>#vlr</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <valarray>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Valarray -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 19.Map -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Map</Title>
+			<Shortcut>#map</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <map>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Map -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 20.CMath -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>CMath</Title>
+			<Shortcut>#cmt</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <cmath>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- CMath -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 21.Include -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Include</Title>
+			<Shortcut>inc</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>
+						lib
+					</ID>
+					<Default>
+						Library
+					</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[#include <$lib$>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Include -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 22.Random -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Random</Title>
+			<Shortcut>#rand</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <random>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Random -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 23.Functional -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Functional</Title>
+			<Shortcut>#func</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <functional>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Functional -->
+	
+<!--////////////////////////////////////#INCLUDE///////////////////////////////////////-->
+	
+	
+	
+	
+	
+	
+<!--2)//////////////////////////////////#STRUCTURES////////////////////////////////////-->
+	<!-- 1.Base -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Base</Title>
+			<Shortcut>base</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[#include <iostream>
+				#include <string>
+				#include <vector>
+				
+				using namespace std;
+				int main(){
+				$end$
+				return 0;
+				}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Base -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 2.Namespace std -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Namespace STD</Title>
+			<Shortcut>nstd</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[using namespace std;$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Namespace std -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 3.Console Output -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Console Output</Title>
+			<Shortcut>cout</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>Var</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[cout << $name$ << endl; 
+				$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Console Output -->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 4.Console Input -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Console Input</Title>
+			<Shortcut>cin</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>Var</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[cin >> $name$ << endl; 
+				$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Console Input -->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 5.Function -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Function</Title>
+			<Shortcut>func</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>auto</Default>
+				</Literal>
+				<Literal>
+					<ID>name0</ID>
+					<Default>untitled</Default>
+				</Literal>
+				<Literal>
+					<ID>name1</ID>
+					<Default>int</Default>
+				</Literal>
+				<Literal>
+					<ID>name2</ID>
+					<Default>var1</Default>
+				</Literal>
+				<Literal>
+					<ID>name3</ID>
+					<Default>int</Default>
+				</Literal>
+				<Literal>
+					<ID>name4</ID>
+					<Default>var2</Default>
+				</Literal>
+				<Literal>
+					<ID>var</ID>
+					<Default>result</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[$name$ $name0$(const $name1$& $name2$, const $name3$& $name4$){
+				$end$
+				return $var$ ;
+				} ]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Function -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 6.Output Array -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>CoutArr</Title>
+			<Shortcut>coutarr</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>arr</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[    for (const int &name : $name$) {
+        cout << name << "  ";
+		}
+		$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Output Array -->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 7.Input Array -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Input Array</Title>
+			<Shortcut>cinarr</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>arr</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[    for (int i = 0; i < sizeof($name$) / sizeof($name$[0]); ++i) {
+		cout <<"Element Number " << i <<": ";
+        cin >> $name$[i];
+    }
+	$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Input Array -->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 8.Output Two-dimensional Array -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Output Two-dimensional Array</Title>
+			<Shortcut>coutarr2</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>arr</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[    for (int i = 0; i < sizeof($name$) / sizeof($name$[0]); ++i) {
+				cout <<"Row Number " << i << endl;
+				for (int j = 0; j < sizeof($name$) / sizeof($name$[0]); ++j) {
+				cout <<"\tElement Number " << j <<": "<< $name$[i][j]<< endl;
+				}}
+				$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Output Two-dimensional Array -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 9.Input Two-dimensional Array -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Input Two-dimensional Array</Title>
+			<Shortcut>cinarr2</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>arr</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[    for (int i = 0; i < sizeof($name$) / sizeof($name$[0]); ++i) {
+				cout <<"Row Number " << i << endl;
+				for (int j = 0; j < sizeof($name$) / sizeof($name$[0]); ++j) {
+				cout <<"\tElement Number " << j <<": ";
+				cin >> $name$[i][j];
+				}}
+				$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Input Two-dimensional Array -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 10.Lambda -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Lambda</Title>
+			<Shortcut>lambda</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>arr</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[[&]//global_args(all)
+						 () mutable//local_args
+						 {
+						 
+						 }
+						 $end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Lambda -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 11.Switch -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Switch</Title>
+			<Shortcut>swc</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>var</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[switch $name${
+	case 1:
+	break;
+	}
+						$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Switch -->
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 12.Ternary Operator -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Ternary Operator</Title>
+			<Shortcut>ift</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>true</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[$name$ ? 1 : 2;]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- tOperator -->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 13.Something Int -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Something Int</Title>
+			<Shortcut>VInt</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>a</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[int $name$= 3;]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Something Int -->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 14.Something String -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Something String</Title>
+			<Shortcut>VStr</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>s</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[std::string $name$= "Hell0 W0rld!";]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Something String -->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 15.Something Array -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Something Array</Title>
+			<Shortcut>VArr</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>int</Default>
+				</Literal>
+				<Literal>
+					<ID>name1</ID>
+					<Default>arr</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[$name$ $name1$[10]={0,2,6,9,11,3,5,0,199,-7};]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Something Array -->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 16.Something Vector -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Something Vector</Title>
+			<Shortcut>VVec</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>vec</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[std::vector<std::string> $name$={"aboba","16","True","55","-17"};]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Something Vector -->
+	
+	<!--///////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 17.Main -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Main</Title>
+			<Shortcut>main</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[int main() {
+					$end$	
+				return 0;
+				}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Main -->
+
+	<!--///////////////////////////////////////////////////////////////////////////////////-->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 18.Long -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>long-long</Title>
+			<Shortcut>ll</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[long long]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Long -->
+
+	<!--///////////////////////////////////////////////////////////////////////////////////-->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 19.For In -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>For In</Title>
+			<Shortcut>fin</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>item</Default>
+				</Literal>
+				<Literal>
+					<ID>name1</ID>
+					<Default>arr</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[for (auto &name : $name1$) {
+						$end$
+						 }]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- For In -->
+
+	<!--///////////////////////////////////////////////////////////////////////////////////-->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 20.Set -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Set</Title>
+			<Shortcut>VSet</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>st</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[std::set<char> $name$;]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Set -->
+
+	<!--///////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 21.Begin and End -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Begin and End</Title>
+			<Shortcut>bgnd</Shortcut> 
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name0</ID>
+					<Default>s</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[$name0$.begin(),$name0$.end()]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Begin and End -->
+
+	<!--///////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 22.Alphabet -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>ASCII alphabet</Title>
+			<Shortcut>alph</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA["abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Alphabet -->
+	
+	<!--///////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 23.GCD -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Greatest Common Divisor</Title>
+			<Shortcut>gcd</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[long long gcd(size_t a, size_t b) { return b ? gcd(b, a % b) : a; }]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- GCD -->
+	
+	<!--///////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 24.Is digit -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Checking Digit</Title>
+			<Shortcut>isdigit</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>d</ID>
+					<Default>0</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[($d$ <= '9'&& $d$ >= '0')]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Is digit -->
+	<!--///////////////////////////////////////////////////////////////////////////////////-->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 25.Swap -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Swap</Title>
+			<Shortcut>swap</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="cpp">
+				<![CDATA[auto t = a;
+							a = b;
+							b = t;]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Swap -->
+	<!--///////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 26.Max -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Max</Title>
+			<Shortcut>max</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>a</ID>
+				</Literal>
+				<Literal>
+					<ID>b</ID>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[(a>b?a:b)]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Max -->
+	<!--///////////////////////////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 27.Abs -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Abs</Title>
+			<Shortcut>abs</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>a</ID>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[(a>0?a:-a)]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Abs -->
+	<!--///////////////////////////////////////////////////////////////////////////////////-->
+	
+<!--///////////////////////////////////////////////////////////////////////////////////-->
+	<!-- 27.Vectorx2 -->
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Vectorx2</Title>
+			<Shortcut>vv</Shortcut>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>type</ID>
+					<Default>int</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="cpp">
+				<![CDATA[std::vector<std::vector<$type$>>]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+	<!-- Vectorx2 -->
+	<!--///////////////////////////////////////////////////////////////////////////////////-->
+</CodeSnippets>
